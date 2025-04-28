@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import StatusLabel, { Status } from './StatusLabel';
+import Link from 'next/link.js';
 
 export interface CompanyRowProps {
   id: number;
@@ -35,7 +36,7 @@ const CompanyRow: FC<CompanyRowProps> = ({
         {category}
       </td>
       <td>
-        <a href={`/companies/${id}`}>{company}</a>
+        <Link href={`/companies/${id}`}>{company}</Link>
       </td>
       <td>
         <StatusLabel status={status}>{labelByStatus[status]}</StatusLabel>

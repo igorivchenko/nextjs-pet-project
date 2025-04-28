@@ -1,15 +1,16 @@
-import { FC } from 'react';
+import React from 'react';
 import Header from '../../../components/Header';
 
 export interface PageProps {
-  params: { id: string[] };
+  params: Promise<{ id: string[] }>;
 }
 
-const Page: FC<PageProps> = ({ params }) => {
+const Page = async ({ params }: PageProps) => {
+  const { id } = await params;
+
   return (
     <>
-      <Header>Companies ({String(params.id)})</Header>
-      <p>{new Date().toTimeString()}</p>
+      <Header>Company ({id})</Header>
     </>
   );
 };
