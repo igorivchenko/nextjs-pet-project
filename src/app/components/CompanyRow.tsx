@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import StatusLabel, { Status } from './StatusLabel';
-import Link from 'next/link.js';
+import Link from 'next/link';
 
 export interface CompanyRowProps {
   id: number;

@@ -1,6 +1,4 @@
 import AddCompanyButton from './components/AddCompanyButton';
-// import StatusLabel, { Status } from './components/StatusLabel';
-
 export default function Home() {
   return (
     <main>
