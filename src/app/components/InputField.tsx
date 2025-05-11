@@ -5,6 +5,7 @@ import { FC, InputHTMLAttributes } from 'react';
 
 export interface InputFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
+  as?: 'input' | 'select' | 'textarea';
 }
 
 const InputField: FC<InputFieldProps> = ({ label, id, ...rest }) => {

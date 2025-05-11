@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface LayoutProps {
-  children: React.ReactNode;
-  header: React.ReactNode;
-  toolbar: React.ReactNode;
-  modal: React.ReactNode;
+  children: ReactNode;
+  header: ReactNode;
+  toolbar: ReactNode;
+  modal: ReactNode;
 }
 
 const Layout: FC<LayoutProps> = ({ children, header, toolbar, modal }) => {

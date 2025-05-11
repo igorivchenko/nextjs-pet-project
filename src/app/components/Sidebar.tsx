@@ -9,7 +9,7 @@ export default function Sidebar() {
   const pathName = usePathname();
 
   const handleExitClick = () => {
-    router.push('/');
+    router.push('/dashboard');
   };
 
   return (
